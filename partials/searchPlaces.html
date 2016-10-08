@@ -1,0 +1,11 @@
+<div class="search-cont">
+	<input type="text" name="" ng-model="curLocation.location" >
+	<!-- <i class="fa fa-search" ng-click="searchCity()"></i> -->
+	<ul>
+		<li ng-repeat="(key, value) in nearPlaces">
+			{{value.name}}
+		</li>
+		
+	</ul>
+</div>
+

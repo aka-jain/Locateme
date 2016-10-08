@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Locate Me</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- node modules for dev -->
+		<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.css">
+
+		<!-- main css -->
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+
+	</head>
+
+		<!-- defining questionaire app here -->
+		<body ng-app="locate" >
+
+
+		<header>
+			<div class="header-image">
+				<img src="assets/images/map.jpg">
+			</div>
+			<h4><a href="#/">LocateMe</a></h4>
+		</header>
+
+
+		<!-- render views here -->
+		<ng-view></ng-view>
+		
+
+
+
+
+
+
+		<!-- node modules for development -->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAy0gTGvocpkhlay0y2fp1cCW7v6Em5_sA"></script>
+
+		<!-- angular lib -->
+		<script type="text/javascript" src="node_modules/angular/angular.js"></script>
+		<script type="text/javascript" src="node_modules/angular-route/angular-route.min.js"></script>
+
+
+
+		<!-- third party plugins -->
+		<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+
+
+		<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+		
+
+
+		<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+
+		<!-- angular app -->
+		<script type="text/javascript" src="app.js"></script>
+
+		<!-- services -->
+		<script type="text/javascript" src="services/services.js"></script>
+
+		<!-- controllers -->
+		<script type="text/javascript" src="controllers/controllers.js"></script>
+
+		<!-- directives -->
+		<script type="text/javascript" src="directives/directives.js"></script>
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.googlemap/1.5/jquery.googlemap.min.js"></script>
+		
+
+	</body>
+
+</html>

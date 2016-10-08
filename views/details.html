@@ -1,0 +1,50 @@
+<div ng-controller="detailsController">
+
+	
+
+	<div class="details-container ">
+		<div class="row">
+			<div class="col-xs-12 col-md-6">
+				<form>
+				
+					<h4 class="text-muted"> Latitude</h4>
+					
+					<input type="text" name="" ng-model="latVal" >
+					<br><br>
+					<h4 class="text-muted"> Longitude</h4>
+					<input type="text" name="" ng-model="longVal" >
+					<div class="btn btn-submit" ng-click="changeValue(latVal, longVal)">Submit</div>
+				</form>
+				<hr>
+
+
+				<!-- search directive -->
+				<search-places></search-places>
+					
+				
+			</div>
+
+			<!-- map -->
+			<div  class="col-xs-12 col-md-6">
+				<div id='map'>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!-- horizontal list for all locations -->
+	<div class="outer">
+
+		<ul class="details-more-list">
+			<li ng-repeat="(key, value) in data">
+
+				<a href="#/location/{{value.pk}}">{{value.location}}
+				<img ng-src="{{value.bg_image}}"></a>
+			</li>
+		</ul>
+
+	</div>
+
+
+</div>

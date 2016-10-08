@@ -1,0 +1,34 @@
+<div ng-controller="listController">
+	
+
+		<!-- render list of locations here -->
+
+		<section class="list-container">
+			<h5 class="text-muted"> List of Locations </h5>
+
+			<div class="location-list row">
+
+				<div class="location-card col-xs-12 col-md-6" ng-repeat="(key, value) in data ">
+
+					<a href="#/location/{{value.pk}}" class=" " >
+						<h2>{{value.location}}</h2>
+						
+							<img  ng-src="{{value.bg_image}}">
+
+							<div class="long-lat row">
+								<div class="latitude-section col-xs-6">
+									Latitude {{value.latitude}}
+								</div>
+								<div class="col-xs-6">
+									Longitude {{value.longitude}}
+								</div>
+
+							</div>
+					</a>
+					
+				</div>
+
+			</div>
+		</section>
+
+</div>
